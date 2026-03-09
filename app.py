@@ -1,8 +1,7 @@
-import streamlit as st
+import requests
+import streamlit.components.v1 as components
 
-# Read HTML file
-with open("https://github.com/Keshava199-web/Portfolio/blob/main/portfolio.html", "r", encoding="utf-8") as f:
-    html_content = f.read()
+url = "https://raw.githubusercontent.com/Keshava199-web/Portfolio/main/portfolio.html"
+html = requests.get(url).text
 
-# Display HTML inside Streamlit
-st.components.v1.html(html_content, height=900, scrolling=True)
+components.html(html, height=1000, scrolling=True)
