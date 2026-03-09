@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Read HTML file
-with open("portfolio.html", "r", encoding="utf-8") as f:
+with open("https://github.com/Keshava199-web/Portfolio/blob/main/portfolio.html", "r", encoding="utf-8") as f:
     html_content = f.read()
 
 # Display HTML inside Streamlit
